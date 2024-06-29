@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/UCSS/InGameMenuCSS.uss?fileID=7433441132597879392&amp;guid=481d664ebd9d9ca448a65a699f8fa154&amp;type=3#InGameMenuCSS" />
+    <ui:VisualElement name="MainPanel" style="flex-grow: 1;">
+        <ui:VisualElement name="Header" style="flex-grow: 1; align-items: center; justify-content: flex-start; align-self: center; width: 100%; height: 15%;">
+            <ui:VisualElement name="ContentHeader" style="flex-grow: 1; align-items: stretch; width: 100%; justify-content: flex-end; flex-direction: row; background-color: rgb(99, 93, 93);">
+                <ui:VisualElement name="LeftElement" style="flex-grow: 1; align-items: flex-start; align-self: flex-start; width: 50%; height: 100%; flex-direction: row; justify-content: center;">
+                    <ui:VisualElement name="FirstItem" style="flex-grow: 1; align-self: center; flex-direction: row; width: 200px; height: 150px; align-items: center; justify-content: center; padding-top: 5%; padding-right: 5%; padding-bottom: 5%; padding-left: 5%; background-color: rgba(0, 0, 0, 0);" />
+                    <ui:VisualElement name="SecondItem" style="flex-grow: 1; flex-direction: row; width: 200px; height: 150px; align-items: center; justify-content: center; align-self: center; padding-top: 5%; padding-right: 5%; padding-bottom: 5%; padding-left: 5%;" />
+                    <ui:VisualElement name="ThirdItem" style="flex-grow: 1; flex-direction: row; width: 200px; height: 150px; align-self: center; padding-top: 5%; padding-right: 5%; padding-bottom: 5%; padding-left: 5%;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="RightElement" style="flex-grow: 1; align-items: flex-end; align-self: flex-end; width: 50%; justify-content: center; flex-direction: row; height: 100%;">
+                    <ui:VisualElement name="MenuItem" style="flex-grow: 1; align-self: flex-start; flex-direction: row; width: 10%; height: 75%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 50px; padding-right: 100px; padding-bottom: 50px; padding-left: 250px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Main" style="flex-grow: 1; width: 100%; height: 70%; align-items: center;" />
+        <ui:VisualElement name="Footer" style="flex-grow: 1; width: 100%; height: 15%; align-items: center; align-self: center;">
+            <ui:VisualElement name="ContentFooter" style="flex-grow: 1; width: 100%; height: 100%; background-color: rgb(99, 93, 93);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
