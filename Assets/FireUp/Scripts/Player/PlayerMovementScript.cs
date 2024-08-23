@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,11 +6,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
 
-public class PlayerScript : MonoBehaviour
+public class PlayerMovementScript : MonoBehaviour
 {
-    [SerializeField] private float _maxHealth = 100.0f;
-    private float _currentHealth;
-
     [SerializeField] private float verticalSpeed = 5.0f, horizontalSpeed = 3.0f;
     private Rigidbody2D _rb;
 
@@ -19,7 +17,6 @@ public class PlayerScript : MonoBehaviour
 
     void Start()
     {
-        _currentHealth = _maxHealth;
         _rb = GetComponent<Rigidbody2D>();
 
         _playerInput.actions["Move"].performed += OnMovePerformed;
@@ -46,5 +43,11 @@ public class PlayerScript : MonoBehaviour
     public void OnMoveCanceled(InputAction.CallbackContext context)
     {
         _isMove = false;
+    }
+
+    private void OnBecameInvisible()
+    {
+        transform.position *= -1;
+        
     }
 }
